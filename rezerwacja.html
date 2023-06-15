@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adamsky CarRent</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+  <header>
+        <h1>Adamsky CarRent - wypożyczalnia samochodów</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Strona główna</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="miasta.html">Miasta</a></li>
+        <li><a href="rezerwacja.html">Rezerwacja</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+  </header>
+
+  <main>
+    <div class="container">
+    <section class="centered">
+      
+      <h2 class="textcenter">Zarezerwuj samochód online</h2>
+      <form action="rezerwacja.html" method="post" >
+        <div class="form">
+        <div class="inline">
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="inline">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="car-type">Wybierz typ samochodu</label>
+          <select id="car-type" name="car-type" required>
+            <option value="">Wybierz typ samochodu</option>
+            <option value="standard">Standard</option>
+            <option value="sport">Sport</option>
+            <option value="luxury">Luxury</option>
+            <option value="suv">SUV</option>
+            <option value="classic">Classic</option>
+          </select>
+        </div>
+        <div class="border">
+          <label>Okres najmu</label>
+        <div class="inline">
+          <label for="start-date">Od</label>
+          <input type="date" id="start-date" name="start-date" required>
+        </div>
+        <div class="inline">
+          <label for="end-date">Do</label>
+          <input type="date" id="end-date" name="end-date" required>
+        </div>
+      </div>
+      <div>
+        Szacowany koszt (Liczba dni: <a id="days">0</a>):<p class="price" id="price">0</p>
+      </div>
+        <div>
+          <input type="checkbox" id="terms" name="terms" class="terms" required>
+          <label class="checkbox-label" for="terms">Potwierdzam regulamin wypożyczalni.</label>
+        </div>
+      </div>
+        <button type="submit">Wyślij</button>
+      
+      </form>
+    </section>
+  </div>
+  </main>
+
+  <footer>
+    <p style="display: inline;">&copy; 2023 Adamsky CarRent. Aktualny czas: </p><div class="clock">00:00:00</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
+
+

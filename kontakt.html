@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adamsky CarRent</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+  <header>
+        <h1>Adamsky CarRent - wypożyczalnia samochodów</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Strona główna</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="miasta.html">Miasta</a></li>
+        <li><a href="rezerwacja.html">Rezerwacja</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+  </header>
+
+  <main>
+    <div class="container">
+    <section class="centered">
+      <h2>Wyślij zapytanie do działu obsługi klienta</h2>
+      <form action="kontakt.html" method="post">
+        <div class="form">
+        <div class="inline">
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="inline">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Wiadomość</label>
+          <textarea name="message" id="message" cols="10" rows="10" required></textarea>
+        </div>
+      </div>
+        <button type="submit">Wyślij</button>
+      </form>
+    </section>
+</div>
+  </main>
+
+  <footer>
+    <p style="display: inline;">&copy; 2023 Adamsky CarRent. Aktualny czas: </p><div class="clock">00:00:00</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
